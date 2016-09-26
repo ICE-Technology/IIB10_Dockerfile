@@ -38,6 +38,8 @@ start()
   sudo /usr/sbin/rsyslogd
 	echo "Starting node $NODE_NAME"
 	mqsistart $NODE_NAME
+	echo "Creating execution group"
+	mqsicreateexecutiongroup $NODE_NAME -e default
 	echo "----------------------------------------"
 }
 
