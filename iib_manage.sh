@@ -29,7 +29,7 @@ start()
 	if [ ${NODE_EXISTS} -ne 0 ]; then
     echo "----------------------------------------"
     echo "Node $NODE_NAME does not exist..."
-    echo "Creating node $NODE_NAME"
+    echo "Creating node on IIB10 $NODE_NAME"
 		mqsicreatebroker $NODE_NAME
     echo "----------------------------------------"
 	fi
