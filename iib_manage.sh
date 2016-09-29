@@ -40,8 +40,10 @@ start()
 	mqsistart $NODE_NAME
 	echo "Creating execution group default"
 	mqsicreateexecutiongroup $NODE_NAME -e default
-	echo "Creating execution group default1"
-	mqsicreateexecutiongroup $NODE_NAME -e default1
+	echo "Creating execution group EGP1"
+	mqsicreateexecutiongroup $NODE_NAME -e EGP1
+	echo "Creating execution group EGP2"
+	mqsicreateexecutiongroup $NODE_NAME -e EGP2
 	echo "----------------------------------------"
 }
 
